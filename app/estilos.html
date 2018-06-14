@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Estilos</title>
+
+    <style> /* Estilos css*/
+    /* Mediante ident*/
+    #tablita {
+        /*propiedad: valordeDeLaPropiedad*/
+        border-style: solid;
+        border-width: 4px;
+        border-color: #000;
+    }
+
+    /*Mediante Etiqueta*/
+    tr {
+        /*propiedad: valordeDeLaPropiedad*/
+        border-style: solid;
+        border-width: 4px;
+        border-color: #000;
+    }
+
+    td, th {
+        /*propiedad: valordeDeLaPropiedad*/
+        border-style: solid;
+        border-width: 4px;
+        border-color: brown;
+    }
+
+    table {
+        border-style: solid;
+        border-width: 4px;
+    }
+    </style>
+    /*Mediante Clases*/
+    <style>
+    .borde-cafe {
+        border-color: brown;
+    }
+    </style>
+    .borde-azul {
+        border-color: aqua;
+    }
+    <style>
+    .rojo {
+        color: red;
+    }
+    </style>
+    <style>
+    .verde {
+        color: green;
+    }
+    </style>
+    <link rel="stylesheet" href="estilos/estilos-generales.css">
+
+
+</head>
+<body>
+
+<h1>JavaScript</h1>
+
+<div id="contenido">
+    <button onclick="crearContenido()"> Crear Contenido</button>
+</div>
+
+<img
+        id="imagen"
+        src="https://www.pokemon-sunmoon.com/ultra/assets/img/sept22/pokemon-group1-1042x636.png"
+        alt="Pokemons">
+
+<button onmouseover="cambiarImagen()">Cambiar Imagen</button>
+
+<table id="tablita"
+       class="borde-cafe"
+       style="border-color: greenyellow">
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+    </tr>
+    <tr>
+        <td>Ronny</td>
+        <td>Cabrera</td>
+        <td>23</td>
+    </tr>
+    <tr>
+        <td>Eli</td>
+        <td>Chicaiza</td>
+        <td>22</td>
+    </tr>
+    <tr>
+        <td>Eli te kan qkjdbqiwbd</td>
+        <td>Chicaiza</td>
+        <td>22</td>
+    </tr>
+</table>
+
+<button onclick="cambiarColor()">Cambiar Color Style</button>
+
+<button onclick="cambiarColorClase()">Cambiar Color Clase</button>
+
+<table class="borde-azul rojo verde">
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+    </tr>
+    <tr>
+        <td>Ronny</td>
+        <td>Cabrera</td>
+        <td>23</td>
+    </tr>
+    <tr>
+        <td>Eli</td>
+        <td>Chicaiza</td>
+        <td>22</td>
+    </tr>
+    <tr>
+        <td>Eli te kan qkjdbqiwbd</td>
+        <td>Chicaiza</td>
+        <td>22</td>
+    </tr>
+</table>
+
+<script>
+    console.log("Hola mundo");
+    console.log(2+5);
+</script>
+<script src="js/inicio.js"></script>
+
+</body>
+</html>
