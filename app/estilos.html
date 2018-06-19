@@ -4,59 +4,119 @@
     <meta charset="UTF-8">
     <title>Estilos</title>
 
-    <style> /* Estilos css*/
-    /* Mediante ident*/
-    #tablita {
-        /*propiedad: valordeDeLaPropiedad*/
-        border-style: solid;
-        border-width: 4px;
-        border-color: #000;
-    }
-
-    /*Mediante Etiqueta*/
-    tr {
-        /*propiedad: valordeDeLaPropiedad*/
-        border-style: solid;
-        border-width: 4px;
-        border-color: #000;
-    }
-
-    td, th {
-        /*propiedad: valordeDeLaPropiedad*/
-        border-style: solid;
-        border-width: 4px;
-        border-color: brown;
-    }
-
+    <style> /* ESTILOS CSS */
+    /* Mediante ID */
+    /*#tablita {*/
+    /*!* propiedad:valorDeLaPropiedad; *!*/
+    /*border-style: solid;*/
+    /*border-width: 4px;*/
+    /*border-color: #000;*/
+    /*}*/
+    /* Mediante Etiqueta  */
     table {
         border-style: solid;
         border-width: 4px;
     }
-    </style>
-    /*Mediante Clases*/
-    <style>
+    td, th {
+        /* propiedad:valorDeLaPropiedad; */
+        border-style: solid;
+        border-width: 1px;
+        border-color: brown;
+    }
+    /* Mediante classes*/
     .borde-cafe {
         border-color: brown;
     }
-    </style>
     .borde-azul {
-        border-color: aqua;
+        border-color: blue;
     }
-    <style>
     .rojo {
         color: red;
     }
-    </style>
-    <style>
     .verde {
         color: green;
     }
     </style>
-    <link rel="stylesheet" href="estilos/estilos-generales.css">
 
+    <style>
+        .rojo{
+            color: yellow;
+        }
+    </style>
+
+    <link rel="stylesheet"
+          href="estilos/estilos-generales.css">
+    <link rel="stylesheet"
+          href="estilos/animate.css">
+
+    <link rel="stylesheet"
+          href="estilos/hover.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
 </head>
 <body>
+
+<h1 class="animated jackInTheBox">Animate css</h1>
+
+<h1 class="hvr-buzz">Hover css</h1>
+
+<h1 class="titulo">TITULO HOVER</h1>
+
+<h1>IESS</h1>
+
+<div class="row">
+    <div class="col-sm-2">
+        <img class="img-fluid" src="img/cap1.PNG" alt="">
+    </div>
+    <div class="col-sm-2">
+        <img class="img-fluid" src="img/cap2.PNG" alt="">
+    </div>
+    <div class="col-sm-3">
+        <img class="img-fluid" src="img/cap3.PNG" alt="">
+    </div>
+    <div class="col-sm-5">
+        <img class="img-fluid" src="img/cap4.PNG" alt="">
+    </div>
+</div>
+
+<h1>Grillas</h1>
+<p>COL - TAMAÑO RESPONSIVE - #COLUMNAS</p>
+<div class="row">
+    <div class="col-sm-1 rojo">1</div>
+    <div class="col-sm-1 rojo">2</div>
+    <div class="col-sm-1 rojo">3</div>
+    <div class="col-sm-1 rojo">4</div>
+    <div class="col-sm-1 rojo">5</div>
+    <div class="col-sm-1 rojo">6</div>
+    <div class="col-sm-1 rojo">7</div>
+    <div class="col-sm-1 rojo">8</div>
+    <div class="col-sm-1 rojo">9</div>
+    <div class="col-sm-1 rojo">10</div>
+    <div class="col-sm-1 rojo">11</div>
+    <div class="col-sm-1 rojo">12</div>
+    <div class="col-sm-4 verde">4</div>
+    <div class="col-sm-4 verde">4</div>
+    <div class="col-sm-4 verde">4</div>
+    <div class="col-sm-6 cafe">
+
+        COLUMNA DE 6
+        <div class="row">
+            <div class="col-sm-3 azul">3</div>
+            <div class="col-sm-3 azul">3</div>
+            <div class="col-sm-3 azul">3</div>
+            <div class="col-sm-3 azul">3</div>
+        </div>
+
+    </div>
+    <div class="col-sm-4 rojo">4</div>
+    <div class="col-sm-2 amarillo">2</div>
+
+    <div class="col-sm-7">7</div>
+
+    <div class="col-sm-8">8</div>
+
+</div>
 
 <h1>JavaScript</h1>
 
@@ -128,6 +188,8 @@
     console.log(2+5);
 </script>
 <script src="js/inicio.js"></script>
+
+
 
 </body>
 </html>

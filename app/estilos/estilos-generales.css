@@ -1,3 +1,61 @@
 .rojo {
     color: red;
 }
+
+.titulo{
+    font-weight: bolder;
+    color: blue;
+    background-color: red;
+    font-size: 10px;
+    animation-name: colores;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /*-webkit-transition: color 2s;*/
+    /*transition: color 2s;*/
+}
+
+/*.titulo:hover {
+    color: greenyellow;
+    cursor: pointer;
+}*/
+
+@keyframes colores {
+    0% {
+        background-color: red;
+        font-size: 10px;
+    }
+    40% {
+        background-color: yellow;
+        font-size: 14px;
+    }
+    60% {
+        background-color: black;
+        font-size: 18px;
+    }
+    80% {
+        background-color: salmon;
+        font-size: 22px;
+    }
+    100% {
+        background-color: tan;
+        font-size: 26px;
+    }
+}
+
+.azul {
+    color: blue;
+}
+.verde {
+    color: green;
+}
+.amarillo {
+    color: yellow;
+}
+.morado {
+    color: magenta;
+}
+.cafe {
+    color: saddlebrown;
+}
